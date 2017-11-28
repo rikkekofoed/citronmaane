@@ -3,25 +3,31 @@
                                             */
 
 body{
-    font-family:sans-serif;
+    font-family:'Open Sans',sans-serif;
     background-color:white;
     color:#3f290a;
     
 }
 
+h1, h3{
+    font-family:'Yesteryear', cursive;
+}
 nav li{
     display:Inline;
     text-decoration: none;
-    margin-left:10px;
     background-color:#f1ca30;  
     text-align:center;
-    
+    font-family:'Yesteryear',cursive;
+    font-size:30px;
+    padding-right:85px;
+    margin-bottom:50px;
+    text-decoration: none;
 }
 
 #pagewrap{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows:50px 170px 170px 400px 170px 100px 50px;
+    grid-template-columns:auto;
+    grid-template-rows:150px 625px 200px 440px 180px 100px 50px 50px;
     grid-template-areas:
         "a a a"
         "b b b"
@@ -34,27 +40,52 @@ nav li{
 }
 
 #header{
-    background-color:blue;
+    background-color:#f1ca30;
     grid-area:a;
     text-align:center;
+    
 }
 
 #hurra{
-    background-color:red;
     grid-area:b;
-    margin-bottom:0.5em;
+    align-content:center;
 }
+.bannerbillede{
+    position:relative;
+    width:auto;
+}     
+
+.tekstbox{
+    position: absolute; 
+    top:50px;
+    left: 30px;
+    width: 100%;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    font-size:25px;
+    text-align:center;
+    background-color:rgba(241, 202, 48, 0.61);
+    padding:0 px;
+    
+    
+}
+
+.tekstbox h1{
+    text-align:center;
+}
+
     
 #omcitronmaanen{
     background-color:#c7d062;
-    grid-area: c;
-    text-align:center;
-
+    grid-area: c;  
+    text-align:center;  
 }
 
 #opskrifter{
     background-color:#f1ca30;
     grid-area: d;
+    padding:15px;
 }
 
 #opskrifter h1{
@@ -71,6 +102,7 @@ nav li{
     background-color:#f1ca30;
     grid-area:f;
 }
+
 #instagram h1{
     text-align:center;
 }
@@ -79,5 +111,4 @@ nav li{
     background-color:#c7d062;
     grid-area:g;
     text-align:Center;
-    font-weight:bold;
 }
