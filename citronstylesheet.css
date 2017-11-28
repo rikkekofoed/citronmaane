@@ -6,7 +6,7 @@ body{
     font-family:'Open Sans',sans-serif;
     background-color:white;
     color:#3f290a;
-    
+    padding:0px;
 }
 
 h1, h3{
@@ -19,23 +19,27 @@ nav li{
     text-align:center;
     font-family:'Yesteryear',cursive;
     font-size:30px;
-    padding-right:85px;
-    margin-bottom:50px;
+    padding-right:90px;
+    margin-bottom
+}
+
+nav a{
     text-decoration: none;
+    color:#3f290a;
 }
 
 #pagewrap{
     display: grid;
-    grid-template-columns:auto;
-    grid-template-rows:150px 625px 200px 440px 180px 100px 50px 50px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows;
     grid-template-areas:
-        "a a a"
-        "b b b"
-        "c c c"
-        "d d d"
-        "e e e"
-        "f f f"
-        "g g g"
+        "a a a a"
+        "b b b b"
+        "c c c c"
+        "d d d d"
+        "e e e e"
+        "f f f f"
+        "g g g g"
     ;
 }
 
@@ -46,13 +50,15 @@ nav li{
     
 }
 
+nav li img{
+    position:relative;
+    top:30px;
+}
 #hurra{
     grid-area:b;
-    align-content:center;
 }
 .bannerbillede{
     position:relative;
-    width:auto;
 }     
 
 .tekstbox{
@@ -60,13 +66,12 @@ nav li{
     top:50px;
     left: 30px;
     width: 100%;
-    margin: 0 auto;
+    margin:auto;
     width: 500px;
     height: auto;
     font-size:25px;
     text-align:center;
-    background-color:rgba(241, 202, 48, 0.61);
-    padding:0 px;
+    background-color:rgba(241, 225, 147, 0.65);
     
     
 }
@@ -79,13 +84,13 @@ nav li{
 #omcitronmaanen{
     background-color:#c7d062;
     grid-area: c;  
-    text-align:center;  
+    text-align:center; 
+    margin-top:-5px;
 }
 
 #opskrifter{
     background-color:#f1ca30;
     grid-area: d;
-    padding:15px;
 }
 
 #opskrifter h1{
@@ -112,3 +117,4 @@ nav li{
     grid-area:g;
     text-align:Center;
 }
+
