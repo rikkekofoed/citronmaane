@@ -1,0 +1,83 @@
+/* Stylesheet for citronmånen
+    Kevin Feliciano Nielsen & Rikke Kofoed
+                                            */
+
+body{
+    font-family:sans-serif;
+    background-color:white;
+    color:#3f290a;
+    
+}
+
+nav li{
+    display:Inline;
+    text-decoration: none;
+    margin-left:10px;
+    background-color:#f1ca30;  
+    text-align:center;
+    
+}
+
+#pagewrap{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:50px 170px 170px 400px 170px 100px 50px;
+    grid-template-areas:
+        "a a a"
+        "b b b"
+        "c c c"
+        "d d d"
+        "e e e"
+        "f f f"
+        "g g g"
+    ;
+}
+
+#header{
+    background-color:blue;
+    grid-area:a;
+    text-align:center;
+}
+
+#hurra{
+    background-color:red;
+    grid-area:b;
+    margin-bottom:0.5em;
+}
+    
+#omcitronmaanen{
+    background-color:#c7d062;
+    grid-area: c;
+    text-align:center;
+
+}
+
+#opskrifter{
+    background-color:#f1ca30;
+    grid-area: d;
+}
+
+#opskrifter h1{
+    text-align:center;
+}
+
+#omdancake{
+    background-color:#c7d062;
+    grid-area: e;
+    text-align:center;
+}
+
+#instagram{
+    background-color:#f1ca30;
+    grid-area:f;
+}
+#instagram h1{
+    text-align:center;
+}
+
+#footer{
+    background-color:#c7d062;
+    grid-area:g;
+    text-align:Center;
+    font-weight:bold;
+}
