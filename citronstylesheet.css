@@ -4,9 +4,9 @@
 
 body{
     font-family:'Open Sans',sans-serif;
+    font-weight:bold; 
     background-color:white;
     color:#3f290a;
-    padding:0px;
 }
 
 h1, h3{
@@ -20,7 +20,6 @@ nav li{
     font-family:'Yesteryear',cursive;
     font-size:30px;
     padding-right:90px;
-    margin-bottom
 }
 
 nav a{
@@ -46,7 +45,7 @@ nav a{
 #header{
     background-color:#f1ca30;
     grid-area:a;
-    text-align:center;
+    text-align:center
     
 }
 
@@ -59,6 +58,7 @@ nav li img{
 }
 .bannerbillede{
     position:relative;
+    
 }     
 
 .tekstbox{
@@ -86,11 +86,35 @@ nav li img{
     grid-area: c;  
     text-align:center; 
     margin-top:-5px;
+    padding-left:240px;
+    padding-right:240px; 
+    padding-bottom:10px;    
+
+    
 }
 
 #opskrifter{
     background-color:#f1ca30;
     grid-area: d;
+    padding-left:50px;
+    padding-right:50px;
+    
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:
+    
+        ". Overskrift1 ."
+        "Overskrift2 . ."
+        "billede1 tekst1for1 tekst1for1"
+        "billede1 tekst2for1 tekst2for1"
+        "billede1 . ."
+        "billede1 . ."
+        ". . Overskrift3 "
+        "tekst1for2 tekst1for2 billede2"     
+        "tekst2for2 tekst2for2 billede2"
+        "anbefaling . billede2"
+        "anbefaling . billede2"
+        ". . .";
 }
 
 #opskrifter h1{
@@ -101,15 +125,30 @@ nav li img{
     background-color:#c7d062;
     grid-area: e;
     text-align:center;
+    padding-left:240px;
+    padding-right:240px;
+    padding-bottom:10px;
 }
 
 #instagram{
     background-color:#f1ca30;
     grid-area:f;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:25px;
+    grid-template-areas: 
+    
+        ". instagramoverskrift . "
+        "insta1 insta2 insta3"
+        "insta4 insta5 insta6"
 }
 
 #instagram h1{
     text-align:center;
+    grid-area:instagramoverskrift;
+    font-weight:lighter;
+    font-size:40px;
+    margin-bottom:-10px;
 }
 
 #footer{
@@ -118,3 +157,92 @@ nav li img{
     text-align:Center;
 }
 
+/* Textarea for grids til opskrifter */ 
+
+#opskriftoverskrift{
+    grid-area:Overskrift1;
+    font-size:40px;
+    font-weight:lighter;
+    margin-bottom:-10px
+}
+
+#grilletcitronmaane{
+    grid-area:Overskrift2;
+    font-size:30px;
+    font-weight:lighter;
+    margin-bottom:-0.5px;
+}
+
+#gctekst1{
+    grid-area:tekst1for1;
+
+}
+
+#gctekst2{
+    grid-area:tekst2for1;
+    
+}
+
+#citronmaaneromkugler{
+    grid-area:Overskrift3;
+    font-size:30px;
+    font-weight:lighter;
+    padding-left:15px;
+    margin-bottom:-0.5px;
+}
+
+#crtekst1{
+    grid-area:tekst1for2;
+}
+
+#crtekst2{
+    grid-area:tekst2for2;
+}
+
+#anbefaling{
+    grid-area:anbefaling;
+}
+#billede1{
+    grid-area:billede1;
+    padding-right:15px;
+    
+}
+#billede2{
+    grid-area:billede2;
+    padding-left:15px;
+    padding-bottom:30px
+}
+
+/*Instagram gridside */
+
+#insta1{
+    grid-area:insta1;
+    padding-left:50px;
+}
+
+#insta2{
+    grid-area:insta2;
+    padding-left:10px
+    
+}
+#insta3{
+    grid-area:insta3;
+    padding-right:50px;
+}
+#insta4{
+    grid-area:insta4;
+    padding-left:50px;
+    padding-bottom:50px; 
+    
+}
+#insta5{
+    grid-area:insta5;
+    padding-left:10px;
+}
+#insta6{
+    grid-area:insta6;
+    padding-left:0px;
+    padding-right:55px
+}
+
+hr { width:100%; height:1px; background: #fff 
