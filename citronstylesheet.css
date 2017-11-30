@@ -2,10 +2,11 @@
     Kevin Feliciano Nielsen & Rikke Kofoed
                                             */
 
+
+
 body{
     font-family:'Open Sans',sans-serif;
     font-weight:lighter; 
-    background-color:white;
     color:#3f290a;
 }
 
@@ -18,8 +19,8 @@ nav li{
     background-color:#f1ca30;  
     text-align:center;
     font-family:'Yesteryear',cursive;
-    font-size:30px;
-    padding-right:90px;
+    font-size:40px;
+    padding-right:50px;
 }
 
 nav a{
@@ -30,7 +31,6 @@ nav a{
 #pagewrap{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows;
     grid-template-areas:
         "a a a a"
         "b b b b"
@@ -51,32 +51,22 @@ nav a{
 
 nav li img{ /*LOGO BILLEDE */
     position:relative;
-    top:30px;
-    width:200px; 
+    top:1px;
+    width:250px; 
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.burgermenu{
+    display:none;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+#logo{
+    display:none;
 }
 
 #hurra{
     grid-area:b;
 }
+
 .bannerbillede{
     position:relative;
     
@@ -129,7 +119,7 @@ nav li img{ /*LOGO BILLEDE */
     padding-left:50px;
     padding-right:50px;
     
-    display:grid;
+    display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-areas:
     
@@ -161,7 +151,6 @@ nav li img{ /*LOGO BILLEDE */
 #billede2{ /*OPSKRIFT BILLEDE 2*/
     width:530px;
     padding-top:20px;
-    padding-right:70px;
 }
 
 #omdancake{
@@ -224,20 +213,18 @@ nav li img{ /*LOGO BILLEDE */
 
 #gctekst1{
     grid-area:tekst1for1;
-    padding-right:50px
 }
 
 #gctekst2{
     grid-area:tekst2for1;
-    padding-right:50px;
 }
 
 #citronmaaneromkugler{
     grid-area:Overskrift3;
     font-size:30px;
     font-weight:lighter;
-    padding-left:315px;
     margin-bottom:-0.5px;
+    text-align:right;
 }
 
 #crtekst1{
@@ -317,30 +304,79 @@ h1, h3{
     font-family:'Yesteryear', cursive;
 }
 nav li{
-    display:Inline;
-    text-decoration: none;
-    background-color:#f1ca30;  
-    text-align:center;
-    font-family:'Yesteryear',cursive;
-    font-size:20px;
-    padding-right0px;
-    margin-right:-50px;
-    padding-left:-50px;
-    margin-left:-30px
-
-    
-    
+    display:none;
 }
 
 nav a{
     text-decoration: none;
-    color:#3f290a;
+    color:#3f290a;    
+    
+}    
+    
+ nav{
+    background-image: url(Logo.png);
+    background-repeat:no-repeat;
+    background-size: 100px;
+    background-position:center;
+    padding-bottom:5px;
+    
 }
+    
+    
+.burgermenu {
+        position: relative;
+        display: block;
+        z-index:10;
+        }
+
+    .burgerknap {
+        width: 55px;
+        height: 55px;
+        background-color: rgba(52, 115, 61, 0);
+        color: #000;
+        border: none;
+        cursor: pointer;
+        position:relative;
+        left:0;
+    }
+
+    .burgerDD {
+        display: none;
+        position: absolute;
+        background-color: #c7d062;
+        min-width: 200px;
+        z-index: 1;
+    }
+
+    .burgerDD a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #000;
+    }
+
+    .burgerDD a:hover {
+        background-color: #c7d060;
+        color: #000;
+    }
+
+    .burgermenu:hover .burgerDD {
+        display: block;
+        margin:auto;
+    }
+    
+    
+    
+#logo{
+    display: inline-block;
+    height:100px;
+    z-index:100;
+    margin:0px 40%;  
+    }    
 
 #pagewrap{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows;
     grid-template-areas:
         "a a a a"
         "b b b b"
@@ -355,8 +391,8 @@ nav a{
 #header{
     background-color:#f1ca30;
     grid-area:a;
-    text-align:center
-    
+    text-align:left;
+    z-index:9;
 }
 
 nav li img{ /*LOGO BILLEDE */
@@ -415,13 +451,8 @@ nav li img{ /*LOGO BILLEDE */
 
 
 #opskrifter{
-    background-color:#f1ca30;
-    grid-area: d;
     padding-left:10px;
     padding-right:10px;
-    
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
     grid-template-areas:
     
         ". Overskrift1 Overskrift1"
@@ -453,7 +484,6 @@ nav li img{ /*LOGO BILLEDE */
 #billede2{ /*OPSKRIFT BILLEDE 2*/
     width:300px;
     padding-top:20px;
-    margin-left:-0px;
     
 }
 
@@ -517,15 +547,13 @@ nav li img{ /*LOGO BILLEDE */
 
 #gctekst1{
     grid-area:tekst1for1;
-    padding-top:-10px;
-    padding-right:60px;    
+    padding-top:-10px;   
 
 
 }
 
 #gctekst2{
     grid-area:tekst2for1;
-    padding-right:50px;
 }
 
 #citronmaaneromkugler{
@@ -533,7 +561,6 @@ nav li img{ /*LOGO BILLEDE */
     font-size:20px;
     font-weight:lighter;
     margin-bottom:-18.5px;
-    margin-left:-155px
 }
 
 #crtekst1{
@@ -620,7 +647,7 @@ h1, h3{
     font-family:'Yesteryear', cursive;
 }
 nav li{
-    display:Inline;
+    display:none;
     text-decoration: none;
     background-color:#f1ca30;  
     text-align:center;
@@ -631,8 +658,6 @@ nav li{
     padding-left:-50px;
     margin-left:-30px;  
 
-    
-    
 }
 
 nav a{
@@ -658,7 +683,7 @@ nav a{
 #header{
     background-color:#f1ca30;
     grid-area:a;
-    text-align:center
+    text-align:left;
     
 }
 
@@ -685,13 +710,12 @@ nav li img{ /*LOGO BILLEDE */
     position: absolute; 
     top:0px;
     left:0px;
-    width: 339px;
-    height:150px;
+    width: 100%;
+    height:97%;
     font-size:11.5px;
     text-align:center;
-    background-color:rgba(241, 225, 147, 0.65); 
-    padding-left:5px;
-    padding-bottom:5px;
+    background-color:rgba(241, 225, 147, 0.65);
+  
     
 }
 
@@ -729,35 +753,38 @@ nav li img{ /*LOGO BILLEDE */
     grid-template-columns:1fr 1fr 1fr;
     grid-template-areas:
     
-        ". Overskrift1 ."
-        ". Overskrift2 ."
-        ". billede1 ."
-        ". tekst1for1 ."
-        ". tekst2for1 ."
-        ". Overskrift3 ."
-        ". billede2 ."
-        ". tekst1for2 ."     
-        ". tekst2for2 ."
-        ". anbefaling .";
+        "Overskrift1 Overskrift1 Overskrift1"
+        "Overskrift2 Overskrift2 Overskrift2"
+        "billede1 billede1 billede1"
+        "tekst1for1 tekst1for1 tekst1for1"
+        "tekst2for1 tekst2for1 tekst2for1"
+        "Overskrift3 Overskrift3 Overskrift3"
+        "billede2 billede2 billede2"
+        "tekst1for2 tekst1for2 tekst1for2"     
+        "tekst2for2 tekst2for2 tekst2for2"
+        "anbefaling anbefaling anbefaling";
 }
 
 #opskrifter h1{
     text-align:center;
     font-size:20px;
-    margin-right:90px
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #billede1{ /*OPSKRIFT BILLEDE 1*/
-    width:344px;
-    padding-top:20px;
-    margin-left:-15px   
+    width:100%;
+    margin:0;
+    padding:10px 0 0 0;
+    
 }
 
 #billede2{ /*OPSKRIFT BILLEDE 2*/
     
-    width:344px;
-    padding-top:20px;
-    margin-left:-25px
+    width:100%;
+    margin:0;
+    padding:20px 0 30px 0;
     
 }
 
@@ -839,35 +866,31 @@ nav li img{ /*LOGO BILLEDE */
 
 #citronmaaneromkugler{
     grid-area:Overskrift3;
-    font-size:20px;
+    font-size:15px;
     font-weight:lighter;
     margin-bottom:-18.5px;
-    margin-left:-228px
+    text-align:Center;
 }
 
 #crtekst1{
     grid-area:tekst1for2;
     font-size:11.5px;
     text-align:center;
-    margin-right:90px;
     margin-top:-20px;
     
 }
 
 #crtekst2{
     grid-area:tekst2for2;
-    padding-right:0px;
-    padding-left:5px;
     font-size:11.5px;
     text-align:center;
-    margin-right:90px;
+
 }
 
 #anbefaling{
     grid-area:anbefaling;
     font-size:11.5px;
     text-align:center;
-    margin-right:90px;
 }
 #billede1{
     grid-area:billede1;
