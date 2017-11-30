@@ -64,13 +64,13 @@ nav li img{ /*LOGO BILLEDE */
 }   
 
 .bannerbillede img{
-    width:1253px;
+    width:1264px;
 } /* BANNER BILLEDET */
 
 .tekstbox{
     position: absolute; 
     top:50px;
-    left: 30px;
+    left: 60px;
     width: 100%;
     margin:auto;
     width: 500px;
@@ -78,6 +78,7 @@ nav li img{ /*LOGO BILLEDE */
     font-size:25px;
     text-align:center;
     background-color:rgba(241, 225, 147, 0.65);
+    font-weight:lighter;
     
     
 }
@@ -86,6 +87,10 @@ nav li img{ /*LOGO BILLEDE */
     text-align:center;
 }
     
+#omcitronmaanen h1{
+    font-size:35px;
+}
+
 #omcitronmaanen{
     background-color:#c7d062;
     grid-area: c;  
@@ -93,8 +98,10 @@ nav li img{ /*LOGO BILLEDE */
     margin-top:-5px;
     padding-left:240px;
     padding-right:240px; 
-    padding-bottom:10px;    
+    padding-bottom:10px;  
+    
 }
+
 
 
 #opskrifter{
@@ -123,14 +130,17 @@ nav li img{ /*LOGO BILLEDE */
 
 #opskrifter h1{
     text-align:center;
+    font-size:35px;
 }
 
 #billede1{ /*OPSKRIFT BILLEDE 1*/
     height:300px;
+    padding-top:20px
 }
 
 #billede2{ /*OPSKRIFT BILLEDE 2*/
     height:300px;
+    padding-top:20px;
 }
 
 #omdancake{
@@ -140,6 +150,10 @@ nav li img{ /*LOGO BILLEDE */
     padding-left:240px;
     padding-right:240px;
     padding-bottom:10px;
+}
+
+#omdancake h1{
+    font-size:35px;
 }
 
 
@@ -160,7 +174,7 @@ nav li img{ /*LOGO BILLEDE */
     text-align:center;
     grid-area:instagramoverskrift;
     font-weight:lighter;
-    font-size:40px;
+    font-size:35px;
     margin-bottom:-10px;
 }
 
@@ -168,13 +182,14 @@ nav li img{ /*LOGO BILLEDE */
     background-color:#c7d062;
     grid-area:g;
     text-align:Center;
+    font-weight:bold;
 }
 
 /* Textarea for grids til opskrifter */ 
 
 #opskriftoverskrift{
     grid-area:Overskrift1;
-    font-size:40px;
+    font-size:35px;
     font-weight:lighter;
     margin-bottom:-10px
 }
@@ -188,7 +203,6 @@ nav li img{ /*LOGO BILLEDE */
 
 #gctekst1{
     grid-area:tekst1for1;
-    
 
 }
 
@@ -272,7 +286,7 @@ nav li img{ /*LOGO BILLEDE */
 
 body{
     font-family:'Open Sans',sans-serif;
-    font-weight:bold; 
+    font-weight:lighter; 
     background-color:white;
     color:#3f290a;
 }
@@ -286,7 +300,8 @@ nav li{
     background-color:#f1ca30;  
     text-align:center;
     font-family:'Yesteryear',cursive;
-    font-size:15px;
+    font-size:20px;
+    
 }
 
 nav a{
@@ -317,8 +332,9 @@ nav a{
 }
 
 nav li img{ /*LOGO BILLEDE */
-    position:relative;
-    top:30px;
+    position:absolute;
+    top:25px;
+    left:355px;
     width:100px; 
 }
 
@@ -331,18 +347,17 @@ nav li img{ /*LOGO BILLEDE */
 }   
 
 .bannerbillede img{
-    width:768px;
+    width:752px;
 } /* BANNER BILLEDET */
 
 .tekstbox{
     position: absolute; 
-    top:50px;
-    left: 30px;
+    top:40px;
+    left: 25px;
     width: 100%;
-    margin:auto;
-    width: 500px;
+    width:320px;
     height: auto;
-    font-size:25px;
+    font-size:15px;
     text-align:center;
     background-color:rgba(241, 225, 147, 0.65);
     
@@ -353,22 +368,28 @@ nav li img{ /*LOGO BILLEDE */
     text-align:center;
 }
     
+#omcitronmaanen h1{
+        font-size:25px;
+    }    
+    
 #omcitronmaanen{
     background-color:#c7d062;
     grid-area: c;  
     text-align:center; 
     margin-top:-5px;
-    padding-left:240px;
-    padding-right:240px; 
-    padding-bottom:10px;    
+    padding-left:120px;
+    padding-right:120px; 
+    padding-bottom:10px;
+    font-size:15px;
+    font-weight:lighter;
 }
 
 
 #opskrifter{
     background-color:#f1ca30;
     grid-area: d;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:10px;
+    padding-right:10px;
     
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -380,34 +401,40 @@ nav li img{ /*LOGO BILLEDE */
         "billede1 tekst2for1 tekst2for1"
         "billede1 . ."
         "billede1 . ."
-        ". . Overskrift3 "  
+        ". . Overskrift3 "
         "tekst1for2 tekst1for2 billede2"     
         "tekst2for2 tekst2for2 billede2"
-        "anbefaling . billede2"
-        "anbefaling . billede2"
-        ". . .";
+        "tekst2for2 tekst2for2 billede2"
+        "anbefaling anbefaling billede2";
 }
 
 #opskrifter h1{
     text-align:center;
+    font-size:25px;
 }
 
 #billede1{ /*OPSKRIFT BILLEDE 1*/
-    height:300px;
+    height:200px;
+    padding-top:20px
 }
 
 #billede2{ /*OPSKRIFT BILLEDE 2*/
-    height:300px;
+    height:200px;
+    padding-top:20px;
 }
 
 #omdancake{
     background-color:#c7d062;
     grid-area: e;
     text-align:center;
-    padding-left:240px;
-    padding-right:240px;
+    padding-left:120px;
+    padding-right:120px;
     padding-bottom:10px;
 }
+
+#omdancake h1{
+    font-size:25px;    
+}    
 
 
 #instagram{
@@ -427,7 +454,7 @@ nav li img{ /*LOGO BILLEDE */
     text-align:center;
     grid-area:instagramoverskrift;
     font-weight:lighter;
-    font-size:40px;
+    font-size:25px;
     margin-bottom:-10px;
 }
 
@@ -441,20 +468,21 @@ nav li img{ /*LOGO BILLEDE */
 
 #opskriftoverskrift{
     grid-area:Overskrift1;
-    font-size:40px;
+    font-size:20px;
     font-weight:lighter;
     margin-bottom:-10px
 }
 
 #grilletcitronmaane{
     grid-area:Overskrift2;
-    font-size:30px;
+    font-size:20px;
     font-weight:lighter;
-    margin-bottom:-0.5px;
+    margin-bottom:-18.5px;
 }
 
 #gctekst1{
     grid-area:tekst1for1;
+    padding-top:-10px
     
 
 }
@@ -466,10 +494,10 @@ nav li img{ /*LOGO BILLEDE */
 
 #citronmaaneromkugler{
     grid-area:Overskrift3;
-    font-size:30px;
+    font-size:20px;
     font-weight:lighter;
     padding-left:15px;
-    margin-bottom:-0.5px;
+    margin-bottom:-18.5px;
 }
 
 #crtekst1{
@@ -500,34 +528,34 @@ nav li img{ /*LOGO BILLEDE */
 #insta1{
     grid-area:insta1;
     padding-left:50px;
-    width:360px;
+    width:200px;
 }
 
 #insta2{
     grid-area:insta2;
-    padding-left:10px;
-    width:360px;
+    padding-left:0px;
+    width:200px;
 }
 #insta3{
     grid-area:insta3;
     padding-right:50px;
-    width:360px;
+    width:200px;
 }
 #insta4{
     grid-area:insta4;
     padding-left:50px;
     padding-bottom:50px; 
-    width:360px;
+    width:200px;
     
 }
 #insta5{
     grid-area:insta5;
-    padding-left:10px;
-    width:360px;
+    padding-left:0px;
+    width:200px;
 }
 #insta6{
     grid-area:insta6;
     padding-left:0px;
-    padding-right:55px;
-    width:360px;    
+    padding-right:50px;
+    width:200px;    
 }
